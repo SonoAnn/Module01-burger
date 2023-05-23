@@ -7,6 +7,9 @@ body {
     padding-left: 15px;
     padding-right: 15px;
 }
+header {
+    border-bottom: 1px solid #DEDEDE;
+}
 .header {
     font-family: 'Open Sans', sans-serif;   
     display: flex;
@@ -35,6 +38,9 @@ body {
     color:#443737;
     text-decoration: none;
 }
+.header-nav a:hover {
+    color: #FFC725;
+}
 .header-nav a.active::after {
     content: '';
     Width:100%;
@@ -53,6 +59,7 @@ body {
     border: none;
     padding: 0;
     gap: 10px;
+    cursor: pointer;
 }
 .button-item {
     position: relative;
@@ -82,6 +89,7 @@ body {
     background-size: cover;
     background-position: center center;
     padding: 142px 0;
+    margin-bottom: 140px;
 }
 .breadcrumbs {
     padding-left: 0;
@@ -89,7 +97,7 @@ body {
     list-style-type: none;
     display: flex;
     justify-content: center;
-    gap: 16px;
+    gap: 8px;
 }
 .breadcrumbs a {
     color: #DEDEDE;
@@ -97,10 +105,17 @@ body {
     font-family: 'Open Sans', sans-serif; 
     text-decoration: none;
 }
+.breadcrumbs a:hover {
+    color: #FFC725;
+}
 .breadcrumbs a::before {
     content: '/';
     position: relative;
-    left: -7px;
+    left: -5px;
+    pointer-events: none;
+}
+.breadcrumbs a:hover::before {
+    color: #DEDEDE;
 }
 .breadcrumbs li:first-child a::before {
    display: none;
@@ -108,8 +123,8 @@ body {
 .title {
     font-weight: 700;
     font-size: 79px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 17px;
+    margin-bottom: 20px;
 }
 .description {
     font-family: 'Open Sans', sans-serif; 
@@ -118,5 +133,41 @@ body {
     color: #FAF9F9;
     max-width: 320px;
     margin: 0 auto;
-
+}
+.banner-box {
+    display: flex;
+    flex-direction: column;
+    max-width: 1180px;
+    color: #FAF9F9;
+    background-image: url(../images/banner2.jpg);
+    background-position: center center;
+    margin-bottom: 100px;
+    margin right: 370px;
+    padding: 109px 0;
+}
+.banner-title {
+    font-size: 15px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+    
+.banner-link {
+    text-decoration: none;
+    background-color: #FBB731;
+    color: #1E2F40;
+    font-family: 'Nunito Sans', sans-serif;
+    border-radius: 3px;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px 26px;
+    
+}
+span {
+    background-color: #F37335;
+    border-radius: 15%;
+    margin-top: 100px;
+    margin-left: 100px;
+    color: #FFFFFF;
+    font-family: 'Nunito Sans', sans-serif;
 }

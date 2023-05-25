@@ -21,16 +21,17 @@ header {
 .header-logo {
      display: block;
      background-image: url(../images/logo.svg);
-     width: 176px;
-     height: 56px;
+     width: 188px;
+     height: 60px;
      background-repeat: no-repeat;
      background-size: cover;
 }
 .header-nav {
     list-style-type: none;
     display: flex;
-   padding-left: 0;
-   gap: 46px;
+    flex-basis: content;
+    padding-left: 0;
+    gap: 46px;
 }
 .header-nav a {
     font-weight: 600;
@@ -142,9 +143,9 @@ header {
     height: 260px;
     color: #FAF9F9;
     background-image: url(../images/banner2.jpg);
-    background-position: 0 center;
-    margin-bottom: 100px;
-    padding: 100px 100px 80px 100px;
+    background-position: center center;
+    margin-bottom: 64px;
+    padding: 105px 100px 80px 100px;
 }
 .banner-title {
     font-family: 'Nunito Sans', sans-serif;
@@ -163,7 +164,7 @@ header {
     text-transform: uppercase;
     color: #FFFFFF;
     background-color: #F37335;
-    border-radius: 15%;
+    border-radius: 14px;
     padding: 5px 19px 5px 17px;
     margin-left: 0;
     font-family: 'Open Sans', sans-serif;
@@ -171,7 +172,7 @@ header {
 .banner-link {
     display: block;
     box-sizing: border-box;
-    max-width: 150px;
+    max-width: 169px;
     text-decoration: none;
     background-color: #FBB731;
     color: #1E2F40;
@@ -184,8 +185,102 @@ header {
     padding: 18px 10px;
 }
 .banner-text {
+    color: #FAF9F9;
     display: block;
     margin-bottom: 20px;
     max-width: 350px ;
-    font-family: 'Open Sans', sans-serif; 
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400; 
 }
+.menu-heder {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu-title {
+    color: #1B2A49;
+    font-weight: 700;
+    font-size: 44px;
+    text-transform: uppercase;
+}
+.menu-select {
+    background: #FFFFFF;
+    border: 1px solid #DEDEDE;
+    padding: 13px 30px;
+    border-radius: 22px;
+    color: #443737;
+    font-size: 15px;
+    appearance: none;
+    flex-basis: 279px;
+    background-image: url(../images/arrow.svg);
+    background-size: 12.79px 7.75px;
+    background-repeat: no-repeat;
+    background-position: 90% center;
+}
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px 20px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.menu-grid-cover {
+    width: 100%;
+    height: 430px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 23px;
+}
+.menu-grid-cover img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    width: 100%;
+    height: 430px;
+}
+.menu-grid-title {
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 30px;
+    margin: 0;
+}
+.menu-grid-price {
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 20px;
+    color: #979797;
+    margin-bottom: 22px;
+    margin-top: 8px;
+}
+.menu-greed-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    margin-left: 114px;
+    width: 152px;
+    background: #FBB731;
+    height: 38px;
+    border-radius: 5px;
+    border: none
+    
+}
+.menu-grid-text {
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #1E2F40;
+}
+.menu-grid-icon {
+    display: block;
+    background-image: url(../images/cart-menu.svg);
+    width: 18px;
+    height: 18px;
+}
+.menu-grid-item

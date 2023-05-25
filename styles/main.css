@@ -30,7 +30,7 @@ header {
     list-style-type: none;
     display: flex;
     flex-basis: content;
-    padding-left: 0;
+    padding-right: 141px;
     gap: 46px;
 }
 .header-nav a {
@@ -144,7 +144,7 @@ header {
     color: #FAF9F9;
     background-image: url(../images/banner2.jpg);
     background-position: center center;
-    margin-bottom: 64px;
+    margin-bottom: 58px;
     padding: 105px 100px 80px 100px;
 }
 .banner-title {
@@ -222,7 +222,7 @@ header {
     grid-template-columns: repeat(3, 1fr);
     gap: 50px 20px;
     text-align: center;
-    margin-bottom: 100px;
+    margin-bottom: 65px;
 }
 .menu-grid-cover {
     width: 100%;

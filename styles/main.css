@@ -18,6 +18,12 @@ header {
     padding-top: 26px;
     padding-bottom: 25px;
 }
+.header-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-basis: 80.5%;
+}
 .header-logo {
      display: block;
      background-image: url(../images/logo.svg);
@@ -182,7 +188,12 @@ header {
     line-height: 18px;
     text-align: center;
     text-transform: uppercase;
-    padding: 18px 10px;
+    padding: 16px 8px;
+    border: 1px solid #FBB731;
+}
+.banner-link:hover {
+    background-color: transparent;
+    color: #FBB731;
 }
 .banner-text {
     color: #FAF9F9;
@@ -192,7 +203,7 @@ header {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400; 
 }
-.menu-heder {
+.menu-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -267,7 +278,10 @@ header {
     height: 38px;
     border-radius: 5px;
     border: none
-    
+}
+.menu-greed-btn:hover {
+    background-color: #f37335;
+    cursor: pointer;
 }
 .menu-grid-text {
     font-weight: 700;
@@ -308,7 +322,7 @@ header {
     margin-bottom: 12px;
     margin-top: 0;
 }
-.footer-item li {
+.footer-list li {
     margin-bottom: 9px;
     font-family: 'Open Sans', sans-serif;  
     font-size: 15px;
@@ -316,7 +330,7 @@ header {
     font-weight: 700;
     line-height: 24px;
 }
-.footer-item a {
+.footer-list a {
     color: #DEDEDE;
     text-decoration: none;
     font-weight: 400;
@@ -327,14 +341,16 @@ header {
     font-weight: 400;
     margin-bottom: 2px;
 }
-.footer-tel ul {
+.footer-list-tel {
+    margin-top: 0;
+}
+.footer-list-tel li {
+    margin-bottom: 12px;
+}
+.footer-list-tel a {
     font-size: 20px;
     color: #FBB731;
-    margin-top: 0;
     font-weight: 900;
-}
-.footer-tel li {
-    margin-bottom: 12px;
 }
 .footer-list {
     padding-left: 0;

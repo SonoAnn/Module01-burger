@@ -149,7 +149,7 @@ header {
     height: 260px;
     color: #FAF9F9;
     background-image: url(../images/banner2.jpg);
-    background-position: center center;
+    background-position: 0 center;
     margin-bottom: 58px;
     padding: 105px 100px 80px 100px;
 }
@@ -196,7 +196,6 @@ header {
     background-color: transparent;
     color: #FBB731;
 }
-
 .banner-text {
     color: #FAF9F9;
     display: block;
@@ -503,4 +502,34 @@ header {
     font-size: 44px;
     font-weight: 700;
     margin-bottom: 10px;
+}
+
+/*Responsive*/
+
+@media (max-wigh: 1000px) {
+    .container {
+        max-width: 738px;
+    }
+    .header-logo {
+        width: 150px;
+        height: 48px;
+        background-size: contain;
+    }
+    .header-nav {
+        gap: 22px;
+    }
+    .header-item {
+        flex-basis: 75.5%;
+    }
+    .bg {
+        margin-bottom: 72px;
+    }
+    .banner-box {
+        background-position: -80px center;
+        padding: 100px 40px 120px;
+    }
+    .menu-grid {
+       grid-template-columns: repeat(2, 1fr);
+       gap: 50px 25px;
+      }
 }

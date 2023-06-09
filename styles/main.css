@@ -36,7 +36,7 @@ header {
     list-style-type: none;
     display: flex;
     flex-basis: content;
-    padding-right: 141px;
+    padding-right: 39px;
     gap: 46px;
 }
 .header-nav a {
@@ -149,6 +149,7 @@ header {
     height: 260px;
     color: #FAF9F9;
     background-image: url(../images/banner2.jpg);
+    background-repeat: no-repeat;
     background-position: 0 center;
     margin-bottom: 58px;
     padding: 105px 100px 80px 100px;
@@ -250,7 +251,7 @@ header {
     transform: translate(-50%, -50%);
     object-fit: cover;
     width: 100%;
-    height: 430px;
+    height: 100%;
 }
 .menu-grid-title {
     display: flex;
@@ -268,7 +269,7 @@ header {
     margin-bottom: 22px;
     margin-top: 8px;
 }
-.menu-greed-btn {
+.menu-grid-btn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -280,7 +281,7 @@ header {
     border-radius: 5px;
     border: none
 }
-.menu-greed-btn:hover {
+.menu-grid-btn:hover {
     background-color: #f37335;
     cursor: pointer;
 }
@@ -500,13 +501,24 @@ header {
 }
 .free {
     font-size: 44px;
-    font-weight: 700;
+    font-wight: 700;
     margin-bottom: 10px;
 }
 
 /*Responsive*/
 
-@media (max-wigh: 1000px) {
+@media (min-width: 1001px) {
+    .footer-list + .footer-list-tel {
+        display: none;
+    }
+}
+@media (min-width: 766px){
+    .header-burger {
+        display: none;
+    }
+}
+
+@media (max-width: 1000px) {
     .container {
         max-width: 738px;
     }
@@ -530,6 +542,171 @@ header {
     }
     .menu-grid {
        grid-template-columns: repeat(2, 1fr);
-       gap: 50px 25px;
+       gap: 50px 15px;
       }
+
+.menu-grid-btn {
+    gap: 6px;
+    width: 131px;
+    margin-left: 75px;
+}
+.menu-other {
+    overflow: hidden;
+    height: 558;
+}
+.menu-other .menu-grid-item {
+    flex: 0 0 281px;
+}
+.menu-over .menu-grid {
+    display: flex;
+    width: auto;
+    overflow-x:scroll;
+    overflow-y: hidden;
+    padding-bottom: 50px;
+}
+
+.menu-other .menu-grid-cover,
+.menu-other .menu-grid-cover img {
+    height: 320px;
+}
+.footer-tel {
+    display: none;
+}
+.footer-list + .footer-list-tel {
+    display: block;
+}
+/*Modal*/
+.burger {
+    width: 34px;
+    height: 22px;
+    background-repeat: no-repeat;
+    background-image: url(../images/burger.svg);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+}
+.modal {
+    background-color: #fff8dc;
+    max-width: 500px;
+    text-align: center;
+    position: absolute;
+    top: -400px;
+    left: 0;
+    right: 0;
+    margin: 20px auto 0;
+    padding: 40px 30px;
+    box-sizing: border-box;
+    transition: .5s;
+}
+.modal .header-nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+.burger-close {
+    background-image: url(../images/close.svg);
+    width: 22px;
+    height: 22px;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;    
+    cursor: pointer;
+}
+@media (max-width:765px) {
+    nav {
+        display: none;
+    }
+}
+.header {
+    gap: 21px;
+}
+@media (max-width: 567px) {
+    .header {
+        padding-top: 19px;
+        padding-bottom: 19px;
+    }
+    .header-logo {
+        width: 116px;
+        height: 37px;
+    }
+    .breadcrumbs a {
+        font-size: 14px;
+    }
+    .bg {
+        margin-bottom: 33px;
+    }
+    .title {
+        font-weight: 700;
+        font-size: 38px;
+    }
+    .description {
+        font-size: 12px;
+    }
+    .bg {
+        padding: 55px 0;
+    }
+    .banner-box {
+        background-position: 17% center;
+        padding: 35px 24px 54px;
+        margin-bottom: 42px; 
+    }
+    .menu-title { 
+        font-size: 27px;
+      }
+      .menu-select {
+        font-size: 12px;
+        flex-basis: 136px;
+        padding: 13px 24px 13px 15px;
+        background-position: 91% center;
+      }
+      .menu-header {
+        margin-bottom: 30px;
+      }
+      .menu-grid {
+        gap: 25px 15px;
+      }
+      .menu-grid-cover {
+        height: 56vw;
+        margin-bottom: 10px;
+     } 
+    
+      .menu-grid-cover img {
+        height: 100%;
+      }
+      .menu-grid-title {
+        font-size: 15px;
+    }
+    .menu-other.menu-grid-cover, {
+        height: 56vw;
+    }
+    .menu-other .menu-grid-cover img {
+        height: 100%;
+        }
+    .menu-other .menu-grid-cover img {
+        height: 56vw;
+    }
+
+    .menu-other .menu-grid-item {
+        flex: 0 0 38vw;
+    }
+}
+
+@media (max-width:360px) {
+    .header-logo {
+        width: 116px;
+        height: 37px;
+        background-size: contain;
+    }
+    .menu-grid-title {
+        font-size: 13px;
+    }
+
+}   
+@media (max-width:320px) {
+    .banner-box {
+        background-position: 25% center;
+    }
 }

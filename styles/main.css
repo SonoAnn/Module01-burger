@@ -47,6 +47,7 @@ header {
 }
 .header-nav a:hover {
     color: #FFC725;
+    transition: 0.3s;
 }
 .header-nav a.active::after {
     content: '';
@@ -114,6 +115,7 @@ header {
 }
 .breadcrumbs a:hover {
     color: #FFC725;
+    transition: 0.3s;
 }
 .breadcrumbs a::before {
     content: '/';
@@ -123,6 +125,7 @@ header {
 }
 .breadcrumbs a:hover::before {
     color: #DEDEDE;
+    transition: 0.3s;
 }
 .breadcrumbs li:first-child a::before {
    display: none;
@@ -196,6 +199,7 @@ header {
 .banner-link:hover {
     background-color: transparent;
     color: #FBB731;
+    transition: 0.3s;
 }
 .banner-text {
     color: #FAF9F9;
@@ -235,7 +239,7 @@ header {
     grid-template-columns: repeat(3, 1fr);
     gap: 50px 20px;
     text-align: center;
-    margin-bottom: 65px;
+    margin-bottom: 50px;
 }
 .menu-grid-cover {
     width: 100%;
@@ -284,6 +288,7 @@ header {
 .menu-grid-btn:hover {
     background-color: #f37335;
     cursor: pointer;
+    transition: 0.3s;
 }
 .menu-grid-text {
     font-weight: 700;
@@ -376,6 +381,7 @@ header {
 }
 .button-up:hover {
     background-color: #F37335;
+    transition: 0.3s;
 }
 .button-up.hidden {
     opacity: 0;
@@ -388,7 +394,7 @@ header {
 .main {
     background: linear-gradient(180deg, #0C4C7B -100%, #1E2F40 100%);
 }
-.container {
+.menu-over .wrapper {
     max-width: 1180px;
     margin: 0 auto;
     display: flex;
@@ -519,7 +525,7 @@ header {
 }
 
 @media (max-width: 1000px) {
-    .container {
+    .menu-other .wrapper {
         max-width: 738px;
     }
     .header-logo {
@@ -541,8 +547,11 @@ header {
         padding: 100px 40px 120px;
     }
     .menu-grid {
+       display: flex;
        grid-template-columns: repeat(2, 1fr);
        gap: 50px 15px;
+       overflow-x: scroll ;
+       overflow-y: hidden;
       }
 
 .menu-grid-btn {

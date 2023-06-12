@@ -314,13 +314,11 @@ header {
 .footer-box {
     display: flex;
     justify-content: space-between;
+    gap: 20px;
 }
 .footer-logo {
     width: 63px;
     height: 56px;
-}
-.footer-item {
-    flex: 0 0 auto;
 }
 .footer-item h2 {
     font-size: 20px;
@@ -328,6 +326,7 @@ header {
     text-transform: uppercase;
     margin-bottom: 12px;
     margin-top: 0;
+    line-height: 1.5;
 }
 .footer-list li {
     margin-bottom: 9px;
@@ -547,7 +546,7 @@ header {
         padding: 100px 40px 120px;
     }
     .menu-grid {
-       display: flex;
+       display: grid;
        grid-template-columns: repeat(2, 1fr);
        gap: 50px 15px;
        overflow-x: scroll ;
@@ -561,12 +560,12 @@ header {
 }
 .menu-other {
     overflow: hidden;
-    height: 558;
+    height: 595px;
 }
 .menu-other .menu-grid-item {
     flex: 0 0 281px;
 }
-.menu-over .menu-grid {
+.menu-other .menu-grid {
     display: flex;
     width: auto;
     overflow-x:scroll;
@@ -632,6 +631,11 @@ header {
 .header {
     gap: 21px;
 }
+.menu-other .wrapper {
+    padding-right: 0;
+}
+.button-up.visible {
+    display: none;
 @media (max-width: 567px) {
     .header {
         padding-top: 19px;
@@ -701,6 +705,21 @@ header {
     .menu-other .menu-grid-item {
         flex: 0 0 38vw;
     }
+    .footer {
+        margin-top: 28px;
+        padding-top: 60px;
+        padding-bottom:60px;
+    }
+    .footer-list + .footer-list-tel {
+        display: none;
+    }
+    .footer-tel {
+        display: block;
+    }
+    .footer-box {
+        display: grid;
+        grid-template-columns: 30% 70%;
+    } 
 }
 
 @media (max-width:360px) {

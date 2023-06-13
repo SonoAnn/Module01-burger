@@ -227,7 +227,9 @@ header {
     border-radius: 22px;
     color: #443737;
     font-size: 15px;
-    appearance: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
     flex-basis: 279px;
     background-image: url(../images/arrow.svg);
     background-size: 12.79px 7.75px;
@@ -253,7 +255,8 @@ header {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     width: 100%;
     height: 100%;
 }
@@ -506,7 +509,7 @@ header {
 }
 .free {
     font-size: 44px;
-    font-wight: 700;
+    font-weight: 700;
     margin-bottom: 10px;
 }
 
@@ -636,6 +639,7 @@ header {
 }
 .button-up.visible {
     display: none;
+}   
 @media (max-width: 567px) {
     .header {
         padding-top: 19px;
@@ -692,7 +696,7 @@ header {
       .menu-grid-title {
         font-size: 15px;
     }
-    .menu-other.menu-grid-cover, {
+    .menu-other.menu-grid-cover {
         height: 56vw;
     }
     .menu-other .menu-grid-cover img {
@@ -719,7 +723,22 @@ header {
     .footer-box {
         display: grid;
         grid-template-columns: 30% 70%;
+        grid-template-areas: "logo tel" "link link" "info info";
+        gap: 0;
     } 
+    .footer-item:nth-child(1) {
+        grid-area: logo;
+    }
+    .footer-item:nth-child(2) {
+        grid-area: link;
+    }
+    .footer-item:nth-child(3) {
+        grid-area: info;
+    }
+    .footer-tel {
+        grid-area: tel;
+        text-align: right;
+    }
 }
 
 @media (max-width:360px) {
@@ -737,4 +756,5 @@ header {
     .banner-box {
         background-position: 25% center;
     }
+}
 }

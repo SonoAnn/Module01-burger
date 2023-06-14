@@ -243,6 +243,12 @@
     </footer>
     <a href="#headerTop" class="button-up hidden" id="btnUp">Наверх</a>
     <div class="modal" id="modal">
+        <ul class="header-nav">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="#" class="active">Меню</a></li>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
         <button class="burger-close" onclick="closeModal()"></button>
     </div>
     <script>
@@ -262,7 +268,9 @@
                 behavior: "smooth"
             });
         }
+
         // Botton Up
+        
         window.onscroll = function(){scrollFunction()};
 
         const upbuttons = document.querySelectorAll(".button-up");

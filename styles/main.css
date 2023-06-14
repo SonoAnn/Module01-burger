@@ -596,6 +596,7 @@ header {
     background-repeat: no-repeat;
     background-image: url(../images/burger.svg);
     background-color: transparent;
+    background-size: contain;
     border: none;
     cursor: pointer;
 
@@ -605,7 +606,7 @@ header {
     max-width: 500px;
     text-align: center;
     position: absolute;
-    top: -400px;
+    top: 0px;
     left: 0;
     right: 0;
     margin: 20px auto 0;
@@ -617,6 +618,7 @@ header {
     flex-direction: column;
     align-items: center;
     gap: 16px;
+
 }
 .burger-close {
     background-image: url(../images/close.svg);

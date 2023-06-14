@@ -396,7 +396,7 @@ header {
 .main {
     background: linear-gradient(180deg, #0C4C7B -100%, #1E2F40 100%);
 }
-.menu-over .wrapper {
+.container {
     max-width: 1180px;
     margin: 0 auto;
     display: flex;
@@ -447,10 +447,11 @@ header {
     justify-content: flex-end;
     position: relative;
 }
-.visual-bg{
+.visual-bg {
     width: 432px;
     height: 100%;
-    background: linear-gradient(2.42deg, #F37335 -19.6%, #FBB731 100.79%, #FDC830 100.79%);
+    background: linear-gradient(2.42deg, #F37335 -19.6%, #FBB731 100.79%,
+     #FDC830 100.79%);
 }
 .main img {
     width: 829px;
@@ -458,9 +459,9 @@ header {
     right: -168px;
 }
 .promo {
+    display: flex;
     padding-top: 186px;
     padding-bottom: 186px;
-    /* display: flex; */
 }
 .promo-left,
 .promo-right {

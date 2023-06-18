@@ -594,7 +594,7 @@ header {
        display: grid;
        grid-template-columns: repeat(2, 1fr);
        gap: 50px 15px;
-    }
+    } 
     .menu-grid-btn {
         gap: 6px;
         width: 131px;
@@ -624,28 +624,28 @@ header {
     .footer-list + .footer-list-tel {
         display: block;
     }
-}
 
 @media (max-width:765px) {
-    nav {
-        display: none;
+        nav {
+            display: none;
+        }
     }
+    .header {
+        gap: 21px;
+    }
+    .menu-other .wrapper {
+        padding-right: 0;
+    }
+    .button-up.visible {
+        display: none;
+    } 
 }
-.header {
-    gap: 21px;
-}
-.menu-other .wrapper {
-    padding-right: 0;
-}
-.button-up.visible {
-    display: none;
-} 
 
 @media (min-width: 766px){
-    .header-burger {
-        display: none;
+        .header-burger {
+            display: none;
+        }
     }
-}
 
 @media (max-width: 567px) {
     .header {

@@ -281,7 +281,7 @@ header {
     justify-content: center;
     align-items: center;
     gap: 19px;
-    margin-left: 114px;
+    margin: auto;
     width: 152px;
     background: #FBB731;
     height: 38px;
@@ -567,11 +567,6 @@ header {
         display: none;
     }
 }
-@media (min-width: 766px){
-    .header-burger {
-        display: none;
-    }
-}
 
 @media (max-width: 1000px) {
     .menu-other .wrapper {
@@ -586,7 +581,7 @@ header {
         gap: 22px;
     }
     .header-item {
-        flex-basis: 75.5%;
+        flex-basis: 82.5%;
     }
     .bg {
         margin-bottom: 72px;
@@ -599,39 +594,36 @@ header {
        display: grid;
        grid-template-columns: repeat(2, 1fr);
        gap: 50px 15px;
-       overflow-x: scroll ;
-       overflow-y: hidden;
+    }
+    .menu-grid-btn {
+        gap: 6px;
+        width: 131px;
+    }
+    .menu-other {
+        overflow: hidden;
+        height: 595px;
+    }
+    .menu-other .menu-grid-item {
+        flex: 0 0 281px;
+    }
+    .menu-other .menu-grid {
+        display: flex;
+        width: auto;
+        overflow-x:scroll;
+        overflow-y: hidden;
+        padding-bottom: 50px;
     }
 
-.menu-grid-btn {
-    gap: 6px;
-    width: 131px;
-    margin-left: 75px;
-}
-.menu-other {
-    overflow: hidden;
-    height: 595px;
-}
-.menu-other .menu-grid-item {
-    flex: 0 0 281px;
-}
-.menu-other .menu-grid {
-    display: flex;
-    width: auto;
-    overflow-x:scroll;
-    overflow-y: hidden;
-    padding-bottom: 50px;
-}
-
-.menu-other .menu-grid-cover,
-.menu-other .menu-grid-cover img {
-    height: 320px;
-}
-.footer-tel {
-    display: none;
-}
-.footer-list + .footer-list-tel {
-    display: block;
+    .menu-other .menu-grid-cover,
+    .menu-other .menu-grid-cover img {
+        height: 320px;
+    }
+    .footer-tel {
+        display: none;
+    }
+    .footer-list + .footer-list-tel {
+        display: block;
+    }
 }
 
 @media (max-width:765px) {
@@ -647,7 +639,14 @@ header {
 }
 .button-up.visible {
     display: none;
-}   
+} 
+
+@media (min-width: 766px){
+    .header-burger {
+        display: none;
+    }
+}
+
 @media (max-width: 567px) {
     .header {
         padding-top: 19px;
@@ -680,28 +679,28 @@ header {
     }
     .menu-title { 
         font-size: 27px;
-      }
-      .menu-select {
+    }
+    .menu-select {
         font-size: 12px;
         flex-basis: 136px;
         padding: 13px 24px 13px 15px;
         background-position: 91% center;
-      }
-      .menu-header {
+    }
+    .menu-header {
         margin-bottom: 30px;
-      }
-      .menu-grid {
+    }
+    .menu-grid {
         gap: 25px 15px;
-      }
-      .menu-grid-cover {
+    }
+    .menu-grid-cover {
         height: 56vw;
         margin-bottom: 10px;
-     } 
+    } 
     
-      .menu-grid-cover img {
+    .menu-grid-cover img {
         height: 100%;
-      }
-      .menu-grid-title {
+    }
+    .menu-grid-title {
         font-size: 15px;
     }
     .menu-other.menu-grid-cover {
@@ -747,6 +746,12 @@ header {
         grid-area: tel;
         text-align: right;
     }
+    .menu-grid-btn {
+        padding: 10px 21px;
+    }
+    .menu-grid-price {
+        font-size: 16px;
+    }
 }
 
 @media (max-width:360px) {
@@ -762,7 +767,6 @@ header {
 }   
 @media (max-width:320px) {
     .banner-box {
-        background-position: 25% center;
+        background-position: 28% center;
     }
-}
 }
